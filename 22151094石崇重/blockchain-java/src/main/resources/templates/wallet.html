@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>钱包余额</title>
+    <link rel="stylesheet" type="text/css" href="css/wallet.css"/>
+</head>
+<body>
+    <div id="block">
+        <p>The blance is:
+            <div th:text="${#numbers.formatDecimal(balance,0,2)}"></div>
+        </p>
+    </div>
+</body>
+</html>
